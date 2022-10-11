@@ -1,0 +1,279 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.to-the-top {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 9;
+    font-size: 4em;
+    color: gray;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.to-the-top:hover {
+    transform: scale(1.1);
+}
+
+.chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+    font-size: 4em;
+    color: #25d366;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.chat:hover {
+    transform: scale(1.1);
+}
+
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 15px;
+    left: 0;
+    z-index: 9;
+    padding: 10px;
+    /* width: 80%;
+    height: 60px;
+    margin: 15px auto 0px; */
+}
+
+.nav-list {
+    background-color: #222222;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+.nav-item{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-menu {
+    width: 100%;
+    height: 60px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    display: none;
+}
+
+.nav-link {
+    opacity: 0.5;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.nav-icon {
+    color: white;
+    display: none !important;
+}
+
+.nav-text {
+    font-weight: bolder;
+    color: white;
+    transition: 0.5s;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto 50px;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+.title::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.row, .div-ls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+    margin: 20px;
+    min-width: 200px;
+    box-shadow: 0 0  5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.col:hover {
+    transform: scale(1.05);
+}
+
+.col img {
+    width: 100%;
+}
+
+.category-names {
+    display: flex;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.lihat-selengkapnya {
+    border: 1px solid #222222;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0px;
+    flex-basis: 25%;
+    opacity: 0.5;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.lihat-selengkapnya:hover {
+    opacity: 1;
+}
+
+.lihat-selengkapnya-text {
+    font-weight: bolder;
+    color: #222222;
+}
+
+footer {
+    width: 100%;
+    height: 170px;
+    font-size: small;
+    background-color: #222222;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.support {
+    padding: 10px;
+}
+
+.support-title {
+    color: white;
+}
+
+.footer-row {
+    display: flex;
+}
+
+.footer-col {
+    width: 60px;
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+}
+
+.footer-col img {
+    width: 100%;
+}
+
+@media screen and (max-width: 487px){
+    .chat {
+        font-size: 2em;
+        bottom: 70px;
+    }
+
+    .to-the-top {
+        font-size: 2em;
+        bottom: 110px;
+    }
+
+    header {
+        width: 100%;
+        position: fixed;
+        bottom: -2px;
+        /* bottom: 15px; */
+        left: 0;
+        z-index: 9;
+        padding: 10px;
+        top: unset;
+    }
+
+    .nav-icon {
+        color: white;
+        display: block !important;
+        font-size: 20px;
+        transition: 0.25s;
+    }
+
+    .nav-icon:hover {
+        transform: translateY(-10%);
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .title {
+        margin-top: unset;
+    }
+
+    .col {
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    .lihat-selengkapnya {
+        flex-basis: 90%;
+    }
+
+    footer {
+        align-items: unset;
+        padding-top: 15px;
+        height: 230px;
+    }
+}
+
+/* @media screen and (max-height: 625px) {
+    footer {
+        position: absolute;
+        bottom: 0px;
+    }
+} */

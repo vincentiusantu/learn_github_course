@@ -1,0 +1,11 @@
+footer {
+    position: absolute;
+    bottom: 0px;
+}
+
+@media screen and (max-width: 520px) {
+    footer {
+        position: unset;
+        bottom: unset;
+    }
+}
